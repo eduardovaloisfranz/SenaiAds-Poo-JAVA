@@ -18,7 +18,7 @@ public class asddas {
 		}
 		System.out.println(total);
 		
-		System.out.println(soma(1, 5));
+		System.out.println(soma(5, 9));
 		
 	}
 	public static int soma(int a, int b) {
