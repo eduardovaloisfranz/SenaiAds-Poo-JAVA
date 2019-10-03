@@ -1,0 +1,24 @@
+package heranca;
+
+public class Paralelogramo extends Forma2d{
+	private double ladoA; 
+	private double ladoB;
+	public Paralelogramo(String nome, double ladoA, double ladoB) {
+		super(nome);
+		this.ladoA = ladoA;
+		this.ladoB = ladoB;		
+	}
+	@Override
+	public double getPerimetro() {
+		return 2 *(this.ladoA + this.ladoB);
+	}
+	@Override
+	public double getArea() {		
+		return this.ladoA * this.ladoB;
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Nome do quadrado: " + super.getNome() + " possui Área: " + super.getArea() + " possui o perimetro" + super.getPerimetro(); 
+	}
+}
