@@ -1,0 +1,11 @@
+package sistemaBancario;
+
+public class bancoMain {
+
+	public static void main(String[] args) {
+		Banco banco1 = new Banco("Banco1");
+		Agencia ag1 = new Agencia(banco1);
+
+	}
+
+}

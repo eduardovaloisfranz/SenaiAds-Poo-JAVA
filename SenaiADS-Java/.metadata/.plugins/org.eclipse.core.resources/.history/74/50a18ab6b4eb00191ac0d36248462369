@@ -1,0 +1,9 @@
+package sistemaBancario;
+
+public final class ContaSimples extends ContaPf{
+
+	public ContaSimples(double saldoInicial, String cpf, double limite, String nome) {
+		super(saldoInicial, cpf, limite, nome);		
+	} 
+
+}

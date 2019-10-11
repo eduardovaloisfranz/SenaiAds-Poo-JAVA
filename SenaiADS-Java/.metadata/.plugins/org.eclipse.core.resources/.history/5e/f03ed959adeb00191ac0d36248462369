@@ -1,0 +1,7 @@
+package sistemaBancario;
+
+public class ContaSimples extends ContaBancaria {
+	public ContaSimples() {
+		
+	}
+}

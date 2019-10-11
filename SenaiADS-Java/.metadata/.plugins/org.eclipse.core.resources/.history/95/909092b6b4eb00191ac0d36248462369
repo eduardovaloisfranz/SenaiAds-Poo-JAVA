@@ -1,0 +1,11 @@
+package sistemaBancario;
+
+public class ContaConjunta extends ContaPf{
+	private String titular2;
+
+	public ContaConjunta(double saldoInicial, String cpf, double limite, String nome, String titular2) {
+		super(saldoInicial, cpf, limite, nome);
+		this.titular2 = titular2;
+	} 
+	
+}

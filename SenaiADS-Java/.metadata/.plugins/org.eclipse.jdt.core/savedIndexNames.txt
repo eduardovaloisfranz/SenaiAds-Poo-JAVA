@@ -17,4 +17,3 @@ INDEX VERSION 1.131+C:\Users\Aluno\Documents\GitHub\SenaiAds-Poo-JAVA\SenaiADS-J
 2845807539.index
 3973945260.index
 2755271588.index
-216470106.index

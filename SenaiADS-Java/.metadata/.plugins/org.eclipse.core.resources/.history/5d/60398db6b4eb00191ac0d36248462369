@@ -1,0 +1,7 @@
+package sistemaBancario;
+
+public class ContaPj extends ContaBancaria{
+	public ContaPj(double saldoInicial, String cnpj, double limite, String nome) {
+		super(saldoInicial, cnpj, limite, nome);
+	}
+}
