@@ -9,10 +9,13 @@ public class bancoMain {
 		
 		TitularPf titularPf = new TitularPf("Nome", "MeuCPF");
 		TitularPj titularPj = new TitularPj("TitularPj", "CNPJ aqui");
-		ContaBancaria minhaConta = new ContaSimples(1300, titularPf, 2000, "meuNome");
-		ContaInvestimentos contaInv1 = new ContaInvestimentos(7, 130.32, titularPf, 1200, "Sou investidor1");
+		
+		
+		ContaBancaria contaSimples = new ContaSimples(1300, titularPf, 2000, "meuNome", ag1);
+		ContaInvestimentos contaInv1 = new ContaInvestimentos(7, 130.32, titularPf, 1200, "Sou investidor1", ag1);
 		//int diaNascimento, double taxaRendimentos, Titular titular, double saldoInicial, String nome
-		ContaInvestimentos contaInv2 = new ContaInvestimentos(9, 90.23, titularPj , 900,  "Investidor2");
+		ContaInvestimentos contaInv2 = new ContaInvestimentos(9, 90.23, titularPj , 900,  "Investidor2", ag1);
+		ag1.addContaBancaria(contaSimples);
 		ag1.addContaBancaria(contaInv1);
 		ag1.addContaBancaria(contaInv2);
 		

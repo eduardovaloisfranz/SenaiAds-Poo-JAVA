@@ -14,5 +14,11 @@ public class Banco {
 	public void addAgencia(Agencia ag) {
 		this.agencias.add(ag);
 	}
+	public int getIdBanco() {
+		return this.idBanco;
+	}
+	public String getNomeComercial() {
+		return this.nomeComercial;
+	}
 	
 }

@@ -34,7 +34,7 @@ public class HerancaMain {
 		System.out.println(q1.equals(q2));
 		System.out.println(q1.getLado());
 		
-		Paralelogramo p2 = new 
+		//Paralelogramo p2 = new 
 		
 		
 	}

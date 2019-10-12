@@ -6,10 +6,11 @@ public abstract class ContaBancaria extends Titular {
 	private Titular titular;
 	private Agencia agencia;
 	private double limite;
-	public ContaBancaria(double saldoInicial, Titular titular, double limite, String nome) {
+	public ContaBancaria(double saldoInicial, Titular titular, double limite, String nome, Agencia agencia) {
 		super(nome);		
 		this.titular = titular;
 		this.saldo = saldoInicial;
+		this.agencia = agencia;
 	}
 	public double getSaldo() {
 		return this.saldo;
@@ -24,7 +25,7 @@ public abstract class ContaBancaria extends Titular {
 		}else {
 			this.saldo -= 0;
 		}
-	}
+	}	
 	public void deposito(double valor) {
 		this.saldo+= valor;
 	}
@@ -33,5 +34,8 @@ public abstract class ContaBancaria extends Titular {
 	}
 	public Agencia getAgencia() {
 		return this.agencia;
+	}
+	public double getLimite() {
+		return this.limite;
 	}
 }

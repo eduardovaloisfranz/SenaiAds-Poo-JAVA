@@ -18,16 +18,22 @@ public class Agencia {
 	public void listarContas() {
 		for(ContaBancaria contas : contasBancarias) {	
 			if(contas instanceof ContaSimples) {
-				System.out.println(((ContaSimples) contas).getNome());
+				System.out.println(contas);
 			}
 			if (contas instanceof ContaConjunta) {
-				
+				System.out.println(contas);
 			}
 			if(contas instanceof ContaInvestimentos) {
-				
+				System.out.println(contas);
+			}
+			if(contas instanceof ContaPj) {
+				System.out.println(contas);
 			}
 			
 		}
+	}
+	public int getIdAgencia() {
+		return this.idAgencia;
 	}
 	public Banco getBanco() {
 		return banco;
