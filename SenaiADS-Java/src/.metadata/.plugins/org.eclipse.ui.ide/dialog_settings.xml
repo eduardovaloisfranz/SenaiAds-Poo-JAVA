@@ -7,29 +7,15 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\Aluno\Documents\SenaiAds-Poo-JAVA"/>
 			<item value="C:\Users\Aluno\Documents\GitHub\SenaiAds-Poo-JAVA\SenaiADS-Java"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
 		</list>
 	</section>
-	<section name="SmartImportWizard">
-		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
-		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
-		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
-		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
-	</section>
-	<section name="CleanDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="826"/>
-		<item key="DIALOG_Y_ORIGIN" value="309"/>
-		<item key="DIALOG_WIDTH" value="500"/>
-		<item key="DIALOG_HEIGHT" value="419"/>
-		<item key="TOGGLE_SELECTED" value="false"/>
-	</section>
 	<section name="ChooseWorkspaceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="380"/>
-		<item key="DIALOG_Y_ORIGIN" value="185"/>
+		<item key="DIALOG_X_ORIGIN" value="201"/>
+		<item key="DIALOG_Y_ORIGIN" value="197"/>
 	</section>
 	<section name="WORKBENCH_SETTINGS">
 		<list key="ENABLED_TRANSFERS">
