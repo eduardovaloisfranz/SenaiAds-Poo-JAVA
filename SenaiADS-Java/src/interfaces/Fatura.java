@@ -1,6 +1,6 @@
 package interfaces;
 
-public class Fatura implements Pagavel{
+public class Fatura implements Pagavel, Tributavel{
 	private static int idAux = 0;
 	private int codigoItem, quantidade;
 	private double valorItem;
@@ -20,6 +20,10 @@ public class Fatura implements Pagavel{
 	}
 	public int getCodigoItem() {
 		return this.codigoItem;
+	}
+	@Override
+	public double getImpostoDevido() {
+		return getTotalDevido() * 0.33;
 	}
 	
 }

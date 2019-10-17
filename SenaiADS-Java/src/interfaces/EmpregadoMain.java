@@ -19,8 +19,8 @@ public class EmpregadoMain {
 		BaseMaisComissao baseMaisComissao = new BaseMaisComissao("EuSou", "baseMaisComissao", "MeuCpf",  100, 50, 1300);
 		
 		
-		System.out.println(m1 + "\n" + semHoraExtra + "\n" + comHoraExtra + "\n" + comissionado + "\n" + baseMaisComissao);
-		System.out.println(comHoraExtra.getSalarioBruto() - semHoraExtra.getSalarioBruto());
+		//System.out.println(m1 + "\n" + semHoraExtra + "\n" + comHoraExtra + "\n" + comissionado + "\n" + baseMaisComissao);
+		//System.out.println(comHoraExtra.getSalarioBruto() - semHoraExtra.getSalarioBruto());
 		
 		ArrayList<Empregado> empregados = new ArrayList<>();
 		
@@ -41,6 +41,7 @@ public class EmpregadoMain {
 		pagar.add(new Fatura(30, 2));
 		
 		
+		System.out.println(m1.getINSS());
 		for(Pagavel pag : pagar) {
 			
 			if(pag instanceof Fatura) {
@@ -49,7 +50,10 @@ public class EmpregadoMain {
 			if (pag instanceof Empregado) {
 				System.out.println("Nome: " + ((Empregado) pag).getNome() + "Total devido: " + pag.getTotalDevido());
 			}
+			
 		}
+		NotaFiscalSC nsc = new NotaFiscalSC();
+		//TributavelSC.ESTADO
 		
 
 	}	

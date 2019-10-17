@@ -1,6 +1,6 @@
 package interfaces;
 
-public abstract class Empregado implements Pagavel{
+public abstract class Empregado implements Pagavel, Tributavel{
 	private String nome;
 	private String sobrenome;
 	private String cpf;
@@ -29,6 +29,14 @@ public abstract class Empregado implements Pagavel{
 	@Override 
 	public double getTotalDevido() {
 		return getSalarioBruto();
+	}
+	@Override 
+	public double getImpostoDevido() {
+		return this.getSalarioBruto() * 0.2;
+	}
+	@Override
+	public double getINSS(){
+		return this.getImpostoDevido() * 0.085;
 	}
 	
 }
