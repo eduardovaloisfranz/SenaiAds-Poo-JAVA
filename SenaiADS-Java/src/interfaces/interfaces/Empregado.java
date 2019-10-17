@@ -1,6 +1,6 @@
 package interfaces;
 
-public abstract class Empregado {
+public abstract class Empregado implements Pagavel{
 	private String nome;
 	private String sobrenome;
 	private String cpf;
@@ -24,6 +24,11 @@ public abstract class Empregado {
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Sou: " + this.nome + " " + this.sobrenome + "Possuo CPF: " + this.cpf;
+	}
+	
+	@Override 
+	public double getTotalDevido() {
+		return getSalarioBruto();
 	}
 	
 }

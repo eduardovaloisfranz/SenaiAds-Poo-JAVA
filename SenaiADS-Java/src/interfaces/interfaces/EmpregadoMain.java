@@ -1,6 +1,8 @@
 package interfaces;
 
+import java.awt.List;
 import java.util.ArrayList;
+
 
 public class EmpregadoMain {
 
@@ -28,8 +30,27 @@ public class EmpregadoMain {
 		empregados.add(comissionado);
 		empregados.add(baseMaisComissao);
 		for(Empregado emp : empregados) {
-			System.out.println(emp);
+			System.out.println(emp + " " + emp.getTotalDevido());
 		}
+		
+		Fatura fat = new Fatura(30, 2);
+				
+		ArrayList<Pagavel> pagar = new ArrayList<>();
+		pagar.add(fat);
+		pagar.addAll(empregados);
+		pagar.add(new Fatura(30, 2));
+		
+		
+		for(Pagavel pag : pagar) {
+			
+			if(pag instanceof Fatura) {
+				System.out.println("Fatura do item: " + ((Fatura) pag).getCodigoItem() + " Total devido: " + pag.getTotalDevido());
+			}
+			if (pag instanceof Empregado) {
+				System.out.println("Nome: " + ((Empregado) pag).getNome() + "Total devido: " + pag.getTotalDevido());
+			}
+		}
+		
 
 	}	
 
