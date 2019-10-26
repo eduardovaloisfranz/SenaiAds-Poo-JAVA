@@ -19,6 +19,42 @@ public class TV implements ITV{
 		this.minVolume = 0;		
 	}
 	
+	public String getSerial() {
+		return serial;
+	}
+
+	public boolean isLigado() {
+		return ligado;
+	}
+
+	public int getVolumeAtual() {
+		return volumeAtual;
+	}
+
+	public int getVolumeAnterior() {
+		return volumeAnterior;
+	}
+
+	public int getMaxVolume() {
+		return maxVolume;
+	}
+
+	public int getMinVolume() {
+		return minVolume;
+	}
+
+	public int getMinCanal() {
+		return minCanal;
+	}
+
+	public int getMaxCanal() {
+		return maxCanal;
+	}
+
+	public int getCanalAtual() {
+		return canalAtual;
+	}
+
 	@Override
 	public void ligarDesligar() {
 		if(this.ligado == true) {
@@ -51,6 +87,8 @@ public class TV implements ITV{
 	public void diminuirCanal() {
 		if(this.canalAtual > 0) {
 			this.canalAtual--;			
+		} else if(this.canalAtual == 0) {
+			this.canalAtual = maxCanal;
 		}
 
 		
@@ -58,10 +96,12 @@ public class TV implements ITV{
 
 	@Override
 	public void comSemSom() {
+		int volumeAtual = 0;
 		if(this.volumeAtual > 0) {
 			this.volumeAtual = 0;
+			volumeAtual = this.volumeAtual;
 		}else {
-			this.volumeAtual = 0;
+			this.volumeAtual = volumeAtual;
 		}
 		
 	}
@@ -70,8 +110,10 @@ public class TV implements ITV{
 	public void aumentarCanal() {
 		if(this.canalAtual < this.maxCanal) {
 			this.canalAtual++;
-		}		
-
+		}
+		if (this.canalAtual >= this.maxCanal) {
+			this.canalAtual = minCanal;
+		}
 		
 	}
 
