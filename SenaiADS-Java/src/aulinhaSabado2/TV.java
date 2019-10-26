@@ -5,13 +5,19 @@ public class TV implements ITV{
 	private String serial;
 	private boolean ligado;
 	private int volumeAtual;
-	private int volumeAnterior;
+	private int volumeAnterior = volumeAtual -1;
 	private int maxVolume;	
+	private int minVolume;
 	private int minCanal;
 	private int maxCanal;
 	private int canalAtual;
 	
-
+	public TV(int volumeMaximo, int canalMinimo, int canalMaximo) {
+		this.maxVolume = volumeMaximo;
+		this.minCanal = canalMinimo;
+		this.maxCanal = canalMaximo;
+		this.minVolume = 0;		
+	}
 	
 	@Override
 	public void ligarDesligar() {
@@ -25,19 +31,28 @@ public class TV implements ITV{
 
 	@Override
 	public void aumentarVolume() {
-		this.volumeAtual++;
+		if(this.volumeAtual < this.maxVolume) {
+			this.volumeAtual++;			
+		}
+
 		
 	}
 
 	@Override
 	public void diminuirVolume() {
-		this.volumeAtual--;		
+		if(this.volumeAtual > 0) {
+			this.volumeAtual--;				
+		}
+
 		
 	}
 
 	@Override
 	public void diminuirCanal() {
-		this.canalAtual--;
+		if(this.canalAtual > 0) {
+			this.canalAtual--;			
+		}
+
 		
 	}
 
@@ -53,7 +68,10 @@ public class TV implements ITV{
 
 	@Override
 	public void aumentarCanal() {
-		this.canalAtual++;
+		if(this.canalAtual < this.maxCanal) {
+			this.canalAtual++;
+		}		
+
 		
 	}
 
