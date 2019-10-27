@@ -9,6 +9,7 @@ public final class ContaInvestimentos extends ContaBancaria {
 		this.diaNascimento = diaNascimento;
 		this.taxaRendimentos = taxaRendimentos;		
 	}
+		
 	
 	@Override
 	public String toString() {

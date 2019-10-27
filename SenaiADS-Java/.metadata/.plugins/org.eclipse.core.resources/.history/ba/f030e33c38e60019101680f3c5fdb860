@@ -1,0 +1,9 @@
+package heranca.figurasPlanas;
+
+import heranca.classes.Triangulo;
+
+public final class TrianguloIsoceles extends Triangulo{
+	public TrianguloIsoceles(String nome, double ladoA, double ladoB) {
+		super(nome, ladoA, ladoA, ladoB);
+	}
+}

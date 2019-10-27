@@ -1,0 +1,15 @@
+package heranca;
+
+public class HerancaMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Quadrado q1 = new Quadrado("Quadrado1" , 5);
+		Retangulo r1 = new Retangulo("Retangulo1" , 5, 5);
+		TrianguloEquilatero teq = new TrianguloEquilatero("TrianguloEquilatero", 5);
+		
+		
+		System.out.println(q1 + "\n" + r1 + " \n" + teq);
+	}
+
+}

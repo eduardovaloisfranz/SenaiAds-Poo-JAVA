@@ -1,0 +1,12 @@
+package heranca;
+
+public final class Quadrado extends Paralelogramo {
+	
+	
+	public Quadrado(String nome, double lado) {
+		//super(nome, ladoA);		
+		super(nome, lado, lado);
+			
+	}	
+	
+}

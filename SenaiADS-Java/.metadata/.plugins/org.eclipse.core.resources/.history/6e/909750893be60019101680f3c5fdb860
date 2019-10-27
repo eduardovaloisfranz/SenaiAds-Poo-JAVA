@@ -1,0 +1,23 @@
+package heranca.figurasPlanas;
+
+public final class Quadrado extends Paralelogramo {
+	
+	
+	public Quadrado(String nome, double lado) {
+		//super(nome, ladoA);		
+		super(nome, lado, lado);
+		//super.xyz;
+			
+	}	
+	@Override
+	public boolean equals(Object outro) {
+		if(outro == null) {
+			return false;
+		}
+		if(outro == this) {
+			return true;
+		}
+		return false;
+	}
+	
+}
