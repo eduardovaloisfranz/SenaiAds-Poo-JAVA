@@ -18,6 +18,23 @@ public class TV implements ITV{
 		this.maxCanal = canalMaximo;
 		this.minVolume = 0;		
 	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		String statusTv = "";
+		if(this.isLigado()) {
+			statusTv = "Ligado";
+		}else {
+			statusTv = "Desligado";
+		}
+		return "A Tv possui serial: " + this.getSerial() + " Encontra-se " + statusTv + " Esta no volume: " + this.getVolumeAtual() +
+				"O volume anterior é : " + this.getVolumeAnterior() + " o volume maximo é: " + this.getMaxVolume() +
+				" o volume minimo é: " + this.getMinVolume() + " e atualmente esta no canal: " + this.getCanalAtual();
+			
+	}
+	public void setSerial(String serial) {
+		this.serial = serial;
+	}
 	
 	public String getSerial() {
 		return serial;
@@ -108,11 +125,10 @@ public class TV implements ITV{
 
 	@Override
 	public void aumentarCanal() {
-		if(this.canalAtual < this.maxCanal) {
+		if(this.canalAtual <= this.maxCanal) {
 			this.canalAtual++;
-		}
-		if (this.canalAtual >= this.maxCanal) {
-			this.canalAtual = minCanal;
+		}else if (this.canalAtual > this.maxCanal) {
+			this.canalAtual = this.minCanal;
 		}
 		
 	}

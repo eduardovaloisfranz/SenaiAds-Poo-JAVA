@@ -7,6 +7,7 @@ public class ControleTv implements IControleTV {
 		this.tv = (TV) Itv;
 	}
 	
+	
 	public TV GetTv() {
 		return this.tv;
 	}
