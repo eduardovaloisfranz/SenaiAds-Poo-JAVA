@@ -1,7 +1,7 @@
 package aulinhaSabado2;
 
 public class ControleSamsung extends ControleTv{	
-	public ControleSamsung(TV tv) {
+	public ControleSamsung(TVSamsung tv) {
 		super(tv);
 	}
 	public void timer(int tempo) {

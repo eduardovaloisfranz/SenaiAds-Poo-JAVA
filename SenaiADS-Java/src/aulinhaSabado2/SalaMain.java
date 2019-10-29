@@ -12,20 +12,23 @@ public class SalaMain {
 			ControleDaTv.channelUp();
 		}	
 		System.out.println(minhaTv.getCanalAtual());
-		ArrayList<TV> tvs = new ArrayList<>();
-		ArrayList<ControleTv> controles = new ArrayList<>();
+		ArrayList<ITV> tvs = new ArrayList<>();
+		ArrayList<IControleTV> controles = new ArrayList<>();
 		tvs.add(minhaTv);
 		tvs.add(new TVSamsung(20, 0, 30));
 		tvs.add(new TVSony(30, 3, 90));
 		controles.add(ControleDaTv);
-		controles.add(new ControleSamsung(tvs.get(1)));
-		controles.add(new ControleSony(tvs.get(2)));
+	    controles.add(new ControleSamsung((TVSamsung) tvs.get(1)));
+		controles.add(new ControleSony((TVSony) tvs.get(2)));
 		controles.get(1).channelDown();
 		controles.get(1).channelDown();
-		for(TV tv: tvs) {
+		for(ITV tv: tvs) {
 			System.out.println(tv.toString());
 		}
-			
+		System.out.println(tvs.get(1) instanceof TVSamsung);
+		System.out.println(tvs.get(2) instanceof TV);
+		
+		IControleTV controleSamsung = new ControleSamsung(new TVSamsung(50, 0, 4));
 		
 	
 	
