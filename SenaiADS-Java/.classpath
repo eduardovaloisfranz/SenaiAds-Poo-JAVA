@@ -3,6 +3,7 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.datatools.connectivity.jdt.DRIVERLIBRARY/Other Driver Default"/>
-	<classpathentry kind="lib" path="C:/Users/Aluno/Documents/GitHub/SenaiAds-Poo-JAVA/SenaiADS-Java/src/sqllite/sqlite-jdbc-3.27.2.1.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.48.jar"/>
+	<classpathentry kind="lib" path="C:/Users/duduf/OneDrive/Documents/GitHub/SenaiAds-Poo-JAVA/SenaiADS-Java/src/sqllite/sqlite-jdbc-3.27.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
